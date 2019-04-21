@@ -1,4 +1,6 @@
 import React from 'react';
+import './App.scss';
+
 
 class Counter extends React.Component {
     constructor() {
@@ -27,7 +29,7 @@ class Counter extends React.Component {
             <h2>Counter</h2>
             <div>
                 <button onClick={this.decrement}> - </button>
-                <span>{this.state.count}</span>
+                <span className="counter">{this.state.count}</span>
                 <button onClick={this.increment}> + </button>
             </div>
         </div> 
